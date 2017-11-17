@@ -5,12 +5,26 @@
   "dependencies": {
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
-    "react-scripts": "1.0.17"
+    "react-materialize": "^1.1.0",
+    "react-scripts": "^1.0.17"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnenov89/PantryChef.git"
+  },
+  "author": "Ann Simeoli, Catherine Noel, Georgi Nenov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gnenov89/PantryChef/issues"
+  },
+  "homepage": "https://github.com/gnenov89/PantryChef#readme"
 }

@@ -7,6 +7,7 @@ import Modal from "react-bootstrap/lib/Modal"
 import FormGroup from "react-bootstrap/lib/FormGroup"
 import ControlLabel from "react-bootstrap/lib/ControlLabel"
 import FormControl from "react-bootstrap/lib/FormControl"
+import API from "./API";
 
 import './App.css';
 
@@ -21,19 +22,23 @@ class App extends Component {
       {recipeName: 'Chicken Parm3', Ingredients: ["Chicken breast", "Tomatoe sauce", "Bread Crumbs", "Parmigianno"]}
     ]
   }
+
+  componentDidMount() {
+    API.searchRecipes("onion soup")
+      .then(res => this.setState({ recipes: res.data.matches }));
+  }
   // eslint-disable-next-line
   render() {
+    console.log(this.state.recipes)
     const{recipes} = this.state;
     return (
       <div className="App container">
         <Accordion>
           {recipes.map((recipe, index)=>(
 
-<Panel header={recipe.recipeName} eventKey = {index} key = {index}>
+<Panel header={recipe.recipeName} eventKey={index} key={index}>
 <ol>
-{recipe.Ingredients.map((item)=>(
-    <li key={item}>{item}</li>
-  ))}
+loop over recipes here
   </ol>
   <ButtonToolbar>
     <Button bsStyle="danger"> Delete Recipe</Button>

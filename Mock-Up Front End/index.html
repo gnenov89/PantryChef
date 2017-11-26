@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pantry Chef</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/chef-icon-min.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+	<!-- home screen -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="waves-effect waves-light btn">Log In<i class="material-icons right">arrow_right</i></a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a class="waves-effect waves-light btn">Log In<i class="material-icons right">arrow_right</i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-6 center-align">
+            <h1>Pantry
+            	<br><img id="chef-hat" src="assets/images/chef-hat-icon.jpg" alt="chef hat">&nbsp;Chef</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 center-align">
+            <a class="waves-effect waves-light btn" id="search_by_ingredient">Search by Ingredient</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 center-align">
+            <a class="waves-effect waves-light btn" id="search_by_recipe">Search by Recipe</a>
+        </div>
+    </div>
+    <div class="row">
+    </div>
+    <div class="row">
+        <div class="col-12 center-align">
+            <span>
+             <a class="waves-effect waves-light btn" id="list_button"><i class="material-icons right">format_list_bulleted</i>List</a>
+             <a class="waves-effect waves-light btn" id="recipe_button"><i class="material-icons right">favorite</i>Recipes</a>
+           </span>
+        </div>
+    </div>
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>

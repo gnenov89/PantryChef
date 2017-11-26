@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pantry Chef</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/chef-icon-min.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="waves-effect waves-light btn">Log In<i class="material-icons right">arrow_right</i></a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a class="waves-effect waves-light btn">Log In<i class="material-icons right">arrow_right</i></a></li>
+                <li><a class="waves-effect waves-light btn" id="list_button"><i class="material-icons right">format_list_bulleted</i>List</a></li>
+                <li><a class="waves-effect waves-light btn" id="recipe_button"><i class="material-icons right">favorite</i>Recipes</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-12 center-align">
+            <h2>Search by Ingredients</h2>
+            <p>Add ingredients to find a recipe</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 center-align">
+            <span>
+                  <i class="search-box material-icons">check_box_outline_blank</i>
+                  <i class="search-box material-icons">add</i>
+                  <i class="search-box material-icons">check_box_outline_blank</i>
+                  <i class="search-box material-icons">add</i>
+                  <i class="search-box material-icons">check_box_outline_blank</i>
+                
+            </span>
+        </div>
+    </div>
+    <!-- search bar -->
+    <div class="container">
+        <div class="search-wrapper card">
+            <form>
+                <div class="input-field">
+                    <input id="search" type="search" required>
+                    <label for="search"><i class="material-icons">search</i></label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+ <!-- search by image -->
+ <div class="container">
+     <div class="row">
+         <div class="col-12 food-container center-align">
+             <img id="foods" src="assets/images/bread.png">
+             <img id="foods" src="assets/images/cheese.png">
+             <img id="foods" src="assets/images/broccoli.png">
+             <img id="foods" src="assets/images/burger.png">
+             <img id="foods" src="assets/images/cherry.png">
+             <img id="foods" src="assets/images/egg.png">
+             <img id="foods" src="assets/images/garlic.png">
+             <img id="foods" src="assets/images/pizza.png">
+             <img id="foods" src="assets/images/crab.png">
+             <img id="foods" src="assets/images/fries.png">
+             <img id="foods" src="assets/images/beer.png">
+             <img id="foods" src="assets/images/kiwi.png">
+         </div>
+     </div>
+ </div>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+#search_by_recipe {
+    margin-bottom: 30px;
+}
+
+#list_button {
+    margin: 10px;
+}
+
+#recipe_button {
+    margin: 10px;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    color: #1A61da;
+    font-size: 5.9vw;
+}
+
+.nav-wrapper {
+    background-color: #FF6e08;
+}
+
+.btn {
+    background-color: #06D6B9;
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+    color: #1A61da;
+    font-size: 6vmax;
+}
+
+input {
+    margin-left: 10px;
+}
+
+#chef-hat {
+    width: 8%;
+}
+
+.search-box {
+		font-size: 6vmax;
+}
+
+#foods {
+	max-width: 20%;
+	max-height: 20%;
+}
+
+.food-container {
+
+}
+
+@media screen and (max-width: 980px) {
+    #chef-hat {
+        width: 10%;
+    }
+}

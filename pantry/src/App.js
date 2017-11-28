@@ -25,7 +25,7 @@ class App extends Component {
   render() {
     const{recipes} = this.state;
     return (
-      <div className="App">
+      <div className="App container">
         <Accordion>
           {recipes.map((recipe, index)=>(
 

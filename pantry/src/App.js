@@ -1,6 +1,6 @@
 import React,{ Component} from 'react';
 import Navbar from "./Components/Navbar.js";
-import CardChefHat from "./Components/Card.js"
+import Card from "./Components/Card.js"
 
 // 
 import API from "./API";
@@ -30,7 +30,7 @@ class App extends Component {
  <div>
 
  <Navbar />
-
+<Card />
 
 </div>
 

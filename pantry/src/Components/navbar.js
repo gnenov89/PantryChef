@@ -1,5 +1,5 @@
 import React,{ Component } from "react";
-import {Navbar, NavItem, Icon, Button, Col} from "react-materialize"
+import {Navbar, NavItem, Icon, } from "react-materialize"
 
 
 
@@ -7,22 +7,26 @@ class navbar extends Component {
     render () {
         return (
     <div>
-        <Col s={12} className="center"> <Navbar brand='Pantry'right>
+    
 
-            <Col s={3} className="left-align">
-              <NavItem href='get-started.html'><Icon>mood</Icon></NavItem>
-              <NavItem href='get-started.html'><Icon>people</Icon></NavItem>
-            </Col>
+    <Navbar brand='PantryChef'right>
+    
+    
+	<NavItem href='get-started.html'><Icon>search</Icon></NavItem>
+	<NavItem href='get-started.html'><Icon>view_module</Icon></NavItem>
+	<NavItem href='get-started.html'><Icon>refresh</Icon></NavItem>
 
-               
+   </Navbar>
+         
+        
+        
             
-            </Navbar>
-           </Col>
-
+          
+            
+         
             
            
-                    
-    </div>
+</div>
         )
     }
 }

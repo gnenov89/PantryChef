@@ -1,9 +1,10 @@
 import React,{ Component} from 'react';
 import Navbar from "./Components/Navbar.js";
-import Card from "./Components/Card.js"
+import Card from "./Components/Card.js";
+import Button from"./Components/Buttons.js";
 
-// 
 import API from "./API";
+
 
 //import './App.css';
 
@@ -30,7 +31,12 @@ class App extends Component {
  <div>
 
  <Navbar />
-<Card />
+
+  <Card />
+
+
+  <Button />
+
 
 </div>
 

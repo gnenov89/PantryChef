@@ -8,9 +8,9 @@ class card extends Component {
         return (
             <div>
 				<Row>
-				<Col s={12} className="center">
+				<Col s={6} className="center">
                   <Card className='medium'
-	               header={<CardTitle image='.assets/chef-icon-min.jpg'>Card Title</CardTitle>}
+	               header={<CardTitle image='../assets/chef-icon-min.jpg'>Card Title</CardTitle>}
 	              actions={[<a href=''>This is a Link</a>]}>
 
                   </Card>

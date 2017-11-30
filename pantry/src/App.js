@@ -1,5 +1,6 @@
 import React,{ Component} from 'react';
-import Navbar from "./Components/navbar"
+import Navbar from "./Components/Navbar";
+import Card from "./Components/Card"
 
 // 
 import API from "./API";
@@ -22,12 +23,14 @@ class App extends Component {
   // eslint-disable-next-line
   render() {
     console.log(this.state.recipes)
+    // eslint-disable-next-line
     const{recipes} = this.state;
     return (
 
  <div>
 <Navbar />
-My app
+<Card />  
+ 
 
 
 </div>

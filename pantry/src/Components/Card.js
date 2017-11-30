@@ -8,14 +8,14 @@ class card extends Component {
         return (
             <div>
 				<Row>
-				<Col s={6} className="center">
-                  <Card className='small'
-	               header={<CardTitle image='../assets/chef-icon-min.jpg'>Card Title</CardTitle>}
+				<Col s={12} className="center">
+                  <Card className='medium'
+	               header={<CardTitle image='.assets/chef-icon-min.jpg'>Card Title</CardTitle>}
 	              actions={[<a href=''>This is a Link</a>]}>
-	
-                 </Card>
+
+                  </Card>
 				 </Col>
-                  </Row>  
+                </Row>  
            </div>
         )
     }

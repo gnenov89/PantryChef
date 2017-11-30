@@ -2,7 +2,6 @@ import React,{ Component } from "react";
 import {Card} from "react-materialize";
 import CardTitle from "react-materialize"
 
-import {Button, Icon} from 'react-materialize'
 
 export default  () => (
     

@@ -4,9 +4,10 @@
   "private": true,
   "dependencies": {
     "axios": "^0.17.1",
+    "css-to-matrix": "^1.0.0",
     "react": "^16.1.1",
-   
     "react-dom": "^16.1.1",
+    "react-image-parallax": "^1.0.0",
     "react-materialize": "^1.1.0",
     "react-scripts": "^1.0.17"
   },
@@ -30,6 +31,3 @@
   },
   "homepage": "https://github.com/gnenov89/PantryChef#readme"
 }
-
-
- 

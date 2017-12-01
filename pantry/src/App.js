@@ -9,7 +9,7 @@ import {
   Switch,
 } from 'react-router-dom';
 import React from 'react';
-import Navbar from './Components/Navbar'
+import Navbar from './Components/navbar'
 import HomeContainer from "./Components/Home/HomeContainer"
 import SearchContainer from "./Components/Search/SearchContainer"
 import "./App.css"

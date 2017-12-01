@@ -1,9 +1,9 @@
 import axios from "axios";
 
-const queryURL = "http://api.yummly.com/v1/api/recipes";
+const queryURL = "https://api.yummly.com/v1/api/recipes";
 
 const _app_id = "a614db60";
-const _app_key = "0ba60db8aaab204b3ad2fc3ec749f92b"
+const _app_key = "0ba60db8aaab204b3ad2fc3ec749f92b";
 
 export default {
   searchRecipes: function(query) {

@@ -1,6 +1,6 @@
 import React,{ Component } from "react";
 import {Button, Row, Col, Icon} from "react-materialize"
-
+import {Link} from 'react-router-dom';
 
 
 class buttons extends Component {
@@ -21,13 +21,17 @@ class buttons extends Component {
             
             </Row>
             <Row>
-            <Col s={6} className='left'>
-		    <Button waves='light'>button<Icon left>cloud</Icon></Button>
+            <Col s={3}></Col>
+            <Col s={3} >
+		    <Button className='right' waves='light'>button<Icon left>cloud</Icon></Button>
             </Col>
           
-            <Col s={6} className='right'>
-		    <Button waves='light'>button<Icon right>cloud</Icon></Button>
+            <Col s={3}>
+              <Link to={{pathname: '/about'}}>
+                <Button className='left' waves='light'>button<Icon left>cloud</Icon></Button>
+              </Link>
             </Col>
+            <Col s={3}></Col>
 
             </Row>
            </div>

@@ -1,56 +1,33 @@
-import React, { Component } from 'react';
-import Accordion from "react-bootstrap/lib/Accordion"
-import Panel from  "react-bootstrap/lib/Panel"
-import Image from  "react-bootstrap/lib/Image"
-import Col from  "react-bootstrap/lib/Col"
-import Button from "react-bootstrap/lib/Button"
-import ButtonToolbar from "react-bootstrap/lib/ButtonToolbar"
-import Modal from "react-bootstrap/lib/Modal"
-import FormGroup from "react-bootstrap/lib/FormGroup"
-import ControlLabel from "react-bootstrap/lib/ControlLabel"
-import FormControl from "react-bootstrap/lib/FormControl"
-import API from "./API";
+// BrowserRouter is the router implementation for HTML5 browsers (vs Native).
+// Link is your replacement for anchor tags.
+// Route is the conditionally shown component based on matching a path to a URL.
+// Switch returns only the first matching route rather than all matching routes.
+import {
+  BrowserRouter as Router,
+  Link,
+  Route,
+  Switch,
+} from 'react-router-dom';
+import React from 'react';
+import Navbar from './Components/navbar'
+import HomeContainer from "./Components/Home/HomeContainer"
+import SearchContainer from "./Components/Search/SearchContainer"
+import "./App.css"
 
-//import './App.css';
+const Home = () => <h1>Home</h1>;
+const About = () => <h1>About</h1>;
 
-class App extends Component {
-// eslint-disable-next-line
-  constructor(...args){
-    super(...args);
-    this.state = {
-    recipes :[],
-    open: true
-  };
-}
-  componentDidMount() {
-    API.searchRecipes("bread pudding")
-      .then(res => this.setState({ recipes: res.data.matches }));
-  }
-  // eslint-disable-next-line
-  render() {
-    console.log(this.state.recipes)
-    const{recipes} = this.state;
-    return (
-      <div className="App container">
-        <Accordion>
-          {recipes.map((recipe, index)=>(
-        <Col xs={6} md={4}>
-          <Panel header={recipe.recipeName} eventKey={index} key={index}>
-            <Image src={recipe.smallImageUrls} responsive/>
-          </Panel>
-        </Col>
-
-
-
-
-
-           ))}
-        </Accordion>
-
-  <Button bsStyle="primary">Add Recipe</Button>
-      </div>
-    );
-  }
-}
+// We give each route either a target `component`, or we can send functions in `render` or `children` 
+// that return valid nodes. `children` always returns the given node whether there is a match or not.
+const App = () => (
+  <Router>
+    <div>
+      <Navbar/>
+      <Route exact path="/" component={HomeContainer} />
+      <Route exact path="/search" component={SearchContainer} />
+      <Route exact path="/about" component={About} />
+    </div>
+  </Router>
+);
 
 export default App;

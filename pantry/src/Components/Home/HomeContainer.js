@@ -3,7 +3,8 @@ import Card from "./Card.js";
 import Button from"./Buttons.js";
 import "./Home.css"
 import API from "../../API/index";
-import {Col, Row} from "react-materialize"
+import {Col, Row,} from "react-materialize"
+import withAuth from "../HOC/withAuth";
 
 
 //import './App.css';
@@ -24,6 +25,7 @@ class HomeContainer extends Component {
   }
     // eslint-disable-next-line
   render() {
+    console.log(this.props);
     console.log(this.state.recipes)
       // eslint-disable-next-line
     const{recipes} = this.state;
@@ -45,4 +47,4 @@ class HomeContainer extends Component {
   }
 }
 
-export default HomeContainer;
+export default withAuth(HomeContainer);

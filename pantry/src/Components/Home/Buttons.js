@@ -23,12 +23,12 @@ class buttons extends Component {
             <Row>
             <Col s={3}></Col>
             <Col s={3} >
-		    <Button className='right' waves='light'>button<Icon left>cloud</Icon></Button>
+		    <Button className='right' waves='light'>list<Icon left>list</Icon></Button>
             </Col>
           
             <Col s={3}>
               <Link to={{pathname: '/about'}}>
-                <Button className='left' waves='light'>button<Icon left>cloud</Icon></Button>
+                <Button className='left' waves='light'>Favorites<Icon left>favorite</Icon></Button>
               </Link>
             </Col>
             <Col s={3}></Col>

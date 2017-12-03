@@ -1,5 +1,5 @@
 import React,{ Component} from 'react';
-import "./Search.css"
+import "./SearchByRecipe.css"
 import SearchBar from "./SearchBar"
 import SearchResults from "./SearchResults"
 import API from "../../API/index";

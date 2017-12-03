@@ -11,7 +11,7 @@ import {
 import React from 'react';
 import Navbar from './Components/navbar'
 import HomeContainer from "./Components/Home/HomeContainer"
-import SearchContainer from "./Components/Search/SearchContainer"
+import SearchContainer from "./Components/SearchByRecipe/SearchContainer"
 import "./App.css"
 
 const Home = () => <h1>Home</h1>;
@@ -24,8 +24,8 @@ const App = () => (
     <div>
       <Navbar/>
       <Route exact path="/" component={HomeContainer} />
-      <Route exact path="/search" component={SearchContainer} />
-      <Route exact path="/about" component={About} />
+      <Route exact path="/SearchByRecipe" component={SearchContainer} />
+      <Route exact path="/SearchByIngredient" component={About} />
     </div>
   </Router>
 );

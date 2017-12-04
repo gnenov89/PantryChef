@@ -16,5 +16,17 @@ export default {
         requirePictures: true
     }
     });
+  },
+  searchByIngredients: function(query) {
+    return axios.get(
+        queryURL,
+    { params: {
+        _app_id,
+        _app_key,
+        q: query,
+        allowedIngredient: [],
+        requirePictures: true
+    }
+    });
   }
 }

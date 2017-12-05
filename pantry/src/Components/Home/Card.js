@@ -13,7 +13,7 @@ class card extends Component {
                     <Col s={12} m={6} l={6} className="center-align">
                     <Card className='medium'
                     header={<CardTitle image={cardIcon}>Pantry Chef</CardTitle>}
-                    actions={[<a href=''>This is a Link</a>]}>
+                    actions={[<a href=''></a>]}>
 
                     </Card>
                     </Col>

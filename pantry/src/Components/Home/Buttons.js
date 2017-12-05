@@ -16,7 +16,7 @@ class buttons extends Component {
             <Row>
 
             <Col s={12} className='center'>
-                  <Button waves='light' node='a' href='https://www.yummly.com/'>Search By recipe </Button>
+                  <Button waves='light' node='a' href='/search'>Search By recipe </Button>
             </Col>
             
             </Row>

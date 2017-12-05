@@ -4,9 +4,9 @@
 // Switch returns only the first matching route rather than all matching routes.
 import {
   BrowserRouter as Router,
-  Link,
+  // Link,
   Route,
-  Switch,
+  // Switch,
 } from 'react-router-dom';
 import React from 'react';
 import Navbar from './Components/navbar'

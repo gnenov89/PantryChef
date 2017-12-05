@@ -12,7 +12,7 @@ class navbar extends Component {
     <Navbar brand='PantryChef'right>
     
     
-	  <NavItem href='get-started.html'><Icon><Link to="/search  ">search</Link></Icon></NavItem>
+	  
 
       <Modal
 	   header='Sign In'

@@ -1,44 +1,40 @@
-import React,{ Component } from "react";
-import {Button, Navbar, NavItem, Icon, Modal, Input} from "react-materialize"
-import {Link} from 'react-router-dom';
-
+import React, { Component } from "react";
+import { Button, Navbar, NavItem, Icon, Modal, Input } from "react-materialize";
+import { Link } from "react-router-dom";
+import Form from "./Home/form";
+import withAuth from "./HOC/withAuth";
 
 class navbar extends Component {
-    render () {
-        return (
-    <div>
-    
+  render() {
+    return (
+      <div>
+        <Navbar brand="PantryChef" right>
+          {this.props.currentUser ? (
+            <span onClick={this.props.signOut} style={{ marginRight: 15, cursor: "pointer"}} >Sign Out</span>
+          ) : (
+            <Modal
+              header="Sign In"
+              trigger={
+                <li>
+                  <Link to="/">
+                    <Icon>account_box</Icon>
+                  </Link>
+                </li>
+              }
+            >
+              <Form />
+            </Modal>
+          )}
 
-    <Navbar brand='PantryChef'right>
-    
-    
-	  
-
-      <Modal
-	   header='Sign In'
-	   trigger={<NavItem href='get-started.html'><Icon><Link to="/">account_box</Link></Icon></NavItem>}>
-       <Input s={6} label="First Name" validate><Icon>account_circle</Icon></Input>
-       <Input type="password" label="password" s={6}><Icon>done</Icon></Input>
-
-       </Modal>
-
-   
-	  <NavItem href=''><Icon><Link to="/">refresh</Link></Icon></NavItem>
-    
-
-   </Navbar>
-         
-        
-        
-            
-          
-            
-         
-            
-           
-</div>
-        )
-    }
+          <li>
+            <Link to="/">
+              <Icon>refresh</Icon>
+            </Link>
+          </li>
+        </Navbar>
+      </div>
+    );
+  }
 }
 
-export default navbar;
+export default withAuth(navbar);

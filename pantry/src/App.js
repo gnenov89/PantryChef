@@ -27,7 +27,7 @@ const App = () => (
   <Router>
     <Auth>
     <div>
-      <Navbar/>
+      <Navbar />
       <Route exact path="/" component={HomeContainer} />
       <Route exact path="/search" component={SearchContainer} />
       <Route exact path="/search by recipe" component={About} />

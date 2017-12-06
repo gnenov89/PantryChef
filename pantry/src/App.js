@@ -11,10 +11,10 @@ import {
 import React from 'react';
 import Navbar from './Components/navbar'
 import HomeContainer from "./Components/Home/HomeContainer"
+import IconContainer from "./Components/SearchByIngredient/IconContainer"
 import SearchContainer from "./Components/SearchByRecipe/SearchContainer"
 import "./App.css"
 import Auth from "./Components/Auth"
-
 
 const Home = () => <h1>Home</h1>;
 
@@ -25,14 +25,22 @@ const App = () => (
   <Router>
     <Auth>
     <div>
-      <Navbar/>
+      <Navbar />
       <Route exact path="/" component={HomeContainer} />
+      <Route exact path="/ingredientsearch" component={IconContainer} />
       <Route exact path="/SearchByRecipe" component={SearchContainer} />
+<<<<<<< HEAD
       {//<Route exact path="/SearchByIngredient" component={About} />
     }
+=======
+>>>>>>> da0a3ee74525e0f2dccfe1b922143a5a09817b3f
     </div>
     </Auth>
+  
   </Router>
+
+ 
+
 );
 
 

@@ -1,6 +1,29 @@
 body {
-    background-color:tan;
+    background-color:white;
+    
 }
 
+a.brand-logo{
+    font-family: 'Lobster', cursive;
+}
+
+img {
+    height: 60%;
+
+ 
+ 
+}
+
+div.card-content {
+   font-family: 'Lobster', cursive;
+
+}
+
+/* footer.page-footer.example{
+ height: 50px;
+  } */
 
 
+#root {
+    min-height: 70vh;
+}

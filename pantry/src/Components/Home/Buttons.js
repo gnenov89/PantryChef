@@ -10,25 +10,25 @@ class buttons extends Component {
 
             <Row>
             <Col s={12} className='center'>
-            <Button waves='light' node='a' href='/SearchByIngredient'> Search By Ingredient </Button>
+              <Link to="/ingredientsearch"><Button waves='light'>Search By Ingredient </Button></Link>
             </Col>
             </Row>
             <Row>
 
             <Col s={12} className='center'>
-                  <Button waves='light' node='a' href='/SearchByRecipe'> Search By Recipe </Button>
+              <Button waves='light' node='a' href='/SearchByRecipe'> Search By Recipe </Button>
             </Col>
             
             </Row>
             <Row>
             <Col s={3}></Col>
             <Col s={3} >
-		    <Button className='right' waves='light'>button<Icon left>cloud</Icon></Button>
+		    <Button className='right' waves='light'>list<Icon left>list</Icon></Button>
             </Col>
           
             <Col s={3}>
               <Link to={{pathname: '/about'}}>
-                <Button className='left' waves='light'>button<Icon left>cloud</Icon></Button>
+                <Button className='left' waves='light'>Favorites<Icon left>favorite</Icon></Button>
               </Link>
             </Col>
             <Col s={3}></Col>

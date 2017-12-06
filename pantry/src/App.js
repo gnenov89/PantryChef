@@ -11,8 +11,8 @@ import {
 import React from 'react';
 import Navbar from './Components/navbar'
 import HomeContainer from "./Components/Home/HomeContainer"
-import SearchContainer from "./Components/Search/SearchContainer"
 import IconContainer from "./Components/SearchByIngredient/IconContainer"
+import SearchContainer from "./Components/SearchByRecipe/SearchContainer"
 import "./App.css"
 import Auth from "./Components/Auth"
 
@@ -28,9 +28,8 @@ const App = () => (
     <div>
       <Navbar/>
       <Route exact path="/" component={HomeContainer} />
-      <Route exact path="/search" component={SearchContainer} />
       <Route exact path="/ingredientsearch" component={IconContainer} />
-      <Route exact path="/about" component={About} />
+      <Route exact path="/SearchByRecipe" component={SearchContainer} />
     </div>
     </Auth>
   </Router>

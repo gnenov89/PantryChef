@@ -9,13 +9,12 @@ import {
   // Switch,
 } from 'react-router-dom';
 import React from 'react';
-import Navbar from './Components/navbar';
-import HomeContainer from "./Components/Home/HomeContainer";
-import SearchContainer from "./Components/Search/SearchContainer";
-import "./App.css";
-import Auth from "./Components/Auth";
-
-
+import Navbar from './Components/navbar'
+import HomeContainer from "./Components/Home/HomeContainer"
+import IconContainer from "./Components/SearchByIngredient/IconContainer"
+import SearchContainer from "./Components/SearchByRecipe/SearchContainer"
+import "./App.css"
+import Auth from "./Components/Auth"
 
 const Home = () => <h1>Home</h1>;
 const About = () => <h1>About</h1>;
@@ -28,10 +27,9 @@ const App = () => (
     <div>
       <Navbar />
       <Route exact path="/" component={HomeContainer} />
-      <Route exact path="/search" component={SearchContainer} />
-      <Route exact path="/search by recipe" component={About} />
-
-      </div>
+      <Route exact path="/ingredientsearch" component={IconContainer} />
+      <Route exact path="/SearchByRecipe" component={SearchContainer} />
+    </div>
     </Auth>
   
   </Router>

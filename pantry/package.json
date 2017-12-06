@@ -39,6 +39,7 @@
     "react-dom": "^16.1.1",
     "react-image-parallax": "^1.0.0",
     "react-materialize": "^1.1.0",
+    "react-responsive-image": "^3.4.2",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "style-loader": "0.19.0",
@@ -56,7 +57,9 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "react-image-resizer": "^1.2.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gnenov89/PantryChef.git"

@@ -4,9 +4,9 @@
 // Switch returns only the first matching route rather than all matching routes.
 import {
   BrowserRouter as Router,
-  Link,
+  // Link,
   Route,
-  Switch,
+  // Switch,
 } from 'react-router-dom';
 import React from 'react';
 import Navbar from './Components/navbar'
@@ -15,7 +15,6 @@ import IconContainer from "./Components/SearchByIngredient/IconContainer"
 import SearchContainer from "./Components/SearchByRecipe/SearchContainer"
 import "./App.css"
 import Auth from "./Components/Auth"
-
 
 const Home = () => <h1>Home</h1>;
 const About = () => <h1>About</h1>;
@@ -26,13 +25,17 @@ const App = () => (
   <Router>
     <Auth>
     <div>
-      <Navbar/>
+      <Navbar />
       <Route exact path="/" component={HomeContainer} />
       <Route exact path="/ingredientsearch" component={IconContainer} />
       <Route exact path="/SearchByRecipe" component={SearchContainer} />
     </div>
     </Auth>
+  
   </Router>
+
+ 
+
 );
 
 

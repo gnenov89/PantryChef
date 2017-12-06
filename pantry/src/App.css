@@ -24,4 +24,6 @@ div.card-content {
   } */
 
 
-
+#root {
+    min-height: 70vh;
+}

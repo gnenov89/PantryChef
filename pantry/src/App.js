@@ -14,7 +14,6 @@ import HomeContainer from "./Components/Home/HomeContainer";
 import SearchContainer from "./Components/Search/SearchContainer";
 import "./App.css";
 import Auth from "./Components/Auth";
-// import Footer from './Components/footer'
 
 
 
@@ -31,12 +30,13 @@ const App = () => (
       <Route exact path="/" component={HomeContainer} />
       <Route exact path="/search" component={SearchContainer} />
       <Route exact path="/search by recipe" component={About} />
-    
+
       </div>
-   
     </Auth>
+  
   </Router>
 
+ 
 
 );
 

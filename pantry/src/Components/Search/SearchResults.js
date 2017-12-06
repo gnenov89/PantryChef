@@ -1,5 +1,5 @@
 import React,{ Component } from "react";
-import {Input, Row, Col} from "react-materialize"
+import {Row} from "react-materialize"
 
 class SearchResults extends Component {
 

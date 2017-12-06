@@ -22,7 +22,7 @@ class SearchContainer extends Component {
   }
     // eslint-disable-next-line
   render() {
-    console.log(this.state.recipes)
+    //console.log(this.state.recipes)
       // eslint-disable-next-line
     const{recipes} = this.state;
       

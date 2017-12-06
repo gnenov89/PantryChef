@@ -8,7 +8,9 @@ a.brand-logo{
 }
 
 img {
- height: 70%;
+    height: 60%;
+
+ 
  
 }
 
@@ -17,9 +19,9 @@ div.card-content {
 
 }
 
-footer.page-footer.example{
+/* footer.page-footer.example{
  height: 50px;
-  }
+  } */
 
 
 

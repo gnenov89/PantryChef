@@ -1,5 +1,6 @@
 import React,{ Component } from "react";
-import {Card, CardTitle, Row, Col} from "react-materialize"
+import {Card, CardTitle, Row, Col} from "react-materialize";
+import cardIcon from "./chef-icon-min.jpg";
 
 
 
@@ -10,14 +11,19 @@ class card extends Component {
 				<Row>
                     <Col s={12} m={3} l={3} className="center-align"></Col>
                     <Col s={12} m={6} l={6} className="center-align">
-                    <Card className='medium'
-                    header={<CardTitle image='../assets/chef-icon-min.jpg'>Card Title</CardTitle>}
-                    actions={[<a href=''>This is a Link</a>]}>
-
-                    </Card>
+                    <Card header={<CardTitle reveal image={cardIcon} waves='light'/>}
+                    title="Press gently for instructions!"
+                    reveal={<p>Hi comrade! Welcome to Pantry Chef! Here you can find recipes by ingredients and by names of recipes. You can make a list of recipes and pick favorites! Have fun with Pantry Chef!</p>}>
+                    
+                    </Card> 
+                    <Col s={12} m={6} l={6} className="left-align"></Col>
+                     
+                 
                     </Col>
-                    <Col s={12} m={3} l={3} className="center-align"></Col>
-                </Row>  
+                    
+                </Row> 
+
+                
            </div>
         )
     }

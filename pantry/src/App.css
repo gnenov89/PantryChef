@@ -27,3 +27,10 @@ div.card-content {
 #root {
     min-height: 70vh;
 }
+ nav{
+    background-color: #FF6e08;
+ }
+
+ footer.page-footer.example {
+    background-color: #FF6e08;
+ }

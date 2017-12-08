@@ -1,5 +1,9 @@
 import React,{ Component } from "react";
+<<<<<<< HEAD
 import {Row, Col} from "react-materialize"
+=======
+import {Row, Col, Card, CardTitle} from "react-materialize"
+>>>>>>> ac83d6e42bb319c085bbb436e657f51b2ae7cd3c
 import RecipeCard from "../SearchByRecipe/RecipeCard.js";
 
 class SearchResults extends Component {

@@ -1,7 +1,6 @@
 import React,{ Component } from "react";
 import {Input, Row, Col, Button, Container} from "react-materialize";
 import API from "../../API/index";
-import Icons from "./Icons"
 
 
 

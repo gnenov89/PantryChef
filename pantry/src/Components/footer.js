@@ -12,7 +12,7 @@ class footer extends Component {
 	
 	className='example'
 >
-		<h5 className="white-text">Footer Content</h5>
+		
 		<a className="grey-text text-lighten-4 right" href="https://github.com/gnenov89/PantryChef/tree/master/pantry"><Icon>code</Icon></a>
 </Footer>
             </div>

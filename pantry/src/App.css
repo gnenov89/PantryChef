@@ -1,6 +1,7 @@
+
 body {
     background-color:white;
-    
+    text-align: center
 }
 
 a.brand-logo{
@@ -9,14 +10,14 @@ a.brand-logo{
 }
 
 
-div.card-content {
+/* div.card-content {
    font-family: 'Lobster', cursive;
 
-}
+} */
 
 /* footer.page-footer.example{
  height: 50px;
-  } */
+  } */ */
 
 
 #root {

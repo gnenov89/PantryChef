@@ -1,5 +1,5 @@
 import React,{ Component, img} from 'react';
-import Image from 'react-image-resizer';
+
 import {Table, Container} from "react-materialize"
 import "./SearchByIngredient.css"
 
@@ -19,7 +19,7 @@ class IconContainer extends Component {
                         <td>
                         <img
                             src={require("./Images/apple.png")}
-                            title="apple"
+                            alt="apple"
                             onClick={this.props.handleClick}
                             onClickCapture={this.props.handleIngredientAdded}
                             />
@@ -27,28 +27,28 @@ class IconContainer extends Component {
                         <td>
                         <img
                             src={require("./Images/asparagus.png")}
-                            title="asparagus"
+                            alt="asparagus"
                             onClick={this.props.handleClick}
                             />
                         </td>
                         <td>
                         <img
                             src={require("./Images/banana.png")}
-                            title="banana"
+                            alt="banana"
                             onClick={this.props.handleClick}
                             />
                         </td>
                         <td>
                         <img
                             src={require("./Images/beer.png")}
-                            title="beer"
+                            alt="beer"
                             onClick={this.props.handleClick}
                             />
                         </td>
                         <td>
                         <img
                             src={require("./Images/bread.png")}
-                            title="bread"
+                            alt="bread"
                             onClick={this.props.handleClick}
                             />
                         </td>
@@ -57,35 +57,35 @@ class IconContainer extends Component {
                         <td>
                         <img
                             src={require("./Images/broccoli.png")}
-                            title="broccoli"
+                            alt="broccoli"
                             onClick={this.props.handleClick}
                             />
                         </td>
                         <td>
                         <img
                             src={require("./Images/burger.png")}
-                            title="burger"
+                            alt="burger"
                             onClick={this.props.handleClick}
                             />
                         </td>
                         <td>
                         <img
                             src={require("./Images/carrot.png")}
-                            title="carrot"
+                            alt="carrot"
                             onClick={this.props.handleClick}
                             />
                         </td>
                         <td>
                         <img
                             src={require("./Images/cheese.png")}
-                            title="cheese"
+                            alt="cheese"
                             onClick={this.props.handleClick}
                             />
                         </td>
                         <td>
                         <img
                             src={require("./Images/cherry.png")}
-                            title="cherry"
+                            alt="cherry"
                             onClick={this.props.handleClick}
                             />
                         </td>

@@ -5,7 +5,7 @@
 
 }
 
- img {
+ img.activator{
 	height: 60%;
 
 }   
@@ -29,4 +29,10 @@ button.btn{
 	background-color: #b4d7d4;
 	
 
+}
+.card .card-image img{
+    width: 200px;
+    display: block;
+    margin: 0 auto;  
+   
 }

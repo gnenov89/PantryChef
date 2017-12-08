@@ -13,6 +13,7 @@ import Navbar from './Components/navbar'
 import HomeContainer from "./Components/Home/HomeContainer"
 import SearchByIngredientContainer from "./Components/SearchByIngredient/SearchByIngredientContainer"
 import SearchContainer from "./Components/SearchByRecipe/SearchContainer"
+import Groceries from "./Components/GroceryList/GroceryCointainer"
 import "./App.css"
 import Auth from "./Components/Auth"
 
@@ -29,6 +30,8 @@ const App = () => (
       <Route exact path="/" component={HomeContainer} />
       <Route exact path="/ingredientsearch" component={SearchByIngredientContainer} />
       <Route exact path="/SearchByRecipe" component={SearchContainer} />
+      <Route exact path="/GroceryList" component={Groceries} />
+
     </div>
     </Auth>
   

@@ -5,6 +5,7 @@ body {
 
 a.brand-logo{
     font-family: 'Lobster', cursive;
+    margin-left:10px;
 }
 
 
@@ -36,6 +37,11 @@ div.card-content {
    
 }
 
-nav .brand-logo{
+nav.brand-logo{
     padding-left:10px;
 }
+
+/* img. {
+	height: 60%;
+
+}    */

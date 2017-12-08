@@ -5,7 +5,7 @@ import Icons from "./Icons"
 import API from "../../API/index";
 import {Col, Row,} from "react-materialize"
 import IngredientsAdded from "./IngredientsAdded"
-//import SearchResults from "./SearchResults"
+import SearchResults from "./SearchResults"
 
 class SearchByIngredientContainer extends Component {
   // eslint-disable-next-line
@@ -20,7 +20,6 @@ class SearchByIngredientContainer extends Component {
     this.handleRemoveIngredient = this.handleRemoveIngredient.bind(this);
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
     this.handleClick = this.handleClick.bind(this);
-    this.handleIngredientAdded = this.handleIngredientAdded.bind(this);
 
   }
 
@@ -36,12 +35,6 @@ class SearchByIngredientContainer extends Component {
   handleRemoveIngredient = event => {
       // Find the ingredent they clicked
       // remove it from the allowedIngredients list
-  }
-
-  handleIngredientAdded = event => {
-    const imgUrl = event.target.getAttribute("src");
-    console.log(imgUrl);
-
   }
 
   handleFormSubmit = event => {
@@ -64,11 +57,10 @@ class SearchByIngredientContainer extends Component {
 
   handleClick = event => {
     event.preventDefault();    
-    const alt = event.target.getAttribute("alt");
+    const alt = event.target.getAttribute("alt")
     const imgUrl = event.target.getAttribute("src");
+    console.log(imgUrl)
     console.log(imgUrl);
-
-
 
   
     if(this.state.allowedIngredients.length > 2) {
@@ -112,7 +104,7 @@ class SearchByIngredientContainer extends Component {
             />
           </Col>
           <Col s={6} className='grid-example'> 
-            
+            <SearchResults recipes={this.state.recipes} />
           </Col>
         </Row>
       </div>

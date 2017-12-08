@@ -17,7 +17,7 @@ class IconContainer extends Component {
               <tbody>
                     <tr>
                         <td>
-                        <img
+                        <img className="apple"
                             src={require("./Images/apple.png")}
                             alt="apple"
                             onClick={this.props.handleClick}

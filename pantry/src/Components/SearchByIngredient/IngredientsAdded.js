@@ -9,13 +9,14 @@ class IngredientsAdded extends Component {
                     <Row>
                         <Col 
                         s={1} 
-                        className='grid-example'
-                        
-                        >1
+                        className='grid-example'>
+                        <img 
+                        src={this.props.alt} 
+                        />
                         </Col>
-                        <img src={this.props.imgUrl} />
-                        <Col s={1} className='grid-example'>2</Col>
-                        <Col s={1} className='grid-example'>3</Col>
+                        
+                        <Col s={1} className='grid-example'></Col>
+                        <Col s={1} className='grid-example'></Col>
                     </Row>
                 </Container>
             </div>

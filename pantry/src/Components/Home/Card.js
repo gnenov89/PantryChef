@@ -11,7 +11,7 @@ class card extends Component {
 				<Row>
                     <Col s={12} m={3} l={3} className="center-align"></Col>
                     <Col s={12} m={6} l={6} className="center-align">
-                    <Card header={<CardTitle reveal image={cardIcon} waves='light'/>}
+                    <Card className="medium" header={<CardTitle reveal image={cardIcon} waves='light'/>}
                     title="Press gently for instructions!"
                     reveal={<p>Hi comrade! Welcome to Pantry Chef! Here you can find recipes by ingredients and by names of recipes. You can make a list of recipes and pick favorites! Have fun with Pantry Chef!</p>}>
                     

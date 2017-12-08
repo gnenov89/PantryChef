@@ -20,20 +20,14 @@ class buttons extends Component {
             </Col>
             
             </Row>
-            <Row>
-            <Col s={3}></Col>
-            <Col s={3} >
-		    <Button className='right' waves='light'>list<Icon left>list</Icon></Button>
-            </Col>
-          
-            <Col s={3}>
-              <Link to={{pathname: '/about'}}>
-                <Button className='left' waves='light'>Favorites<Icon left>favorite</Icon></Button>
-              </Link>
-            </Col>
-            <Col s={3}></Col>
 
+            <Row>
+            <Col s={12} className="center">
+		    <Button className='center' waves='light'>list<Icon left>list</Icon></Button>
+            </Col>
+            
             </Row>
+
            </div>
         )
     }

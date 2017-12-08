@@ -2,6 +2,12 @@
 
 /* button {
 	color:white;
+
+}
+
+img {
+	height: 60%;
+
 }   */
 
 button.btn.waves-effect.waves-light {
@@ -22,4 +28,5 @@ button.btn.waves-effect.waves-light.btn-flat.modal-action.modal-close{
 button.btn{
 	background-color: #b4d7d4;
 	
+
 }

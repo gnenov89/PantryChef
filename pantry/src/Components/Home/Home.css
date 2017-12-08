@@ -4,9 +4,15 @@ button {
 	color: white;
 }
 
+<<<<<<< HEAD
 img.activator {
+=======
+
+ img.activator{
+>>>>>>> 07e1167de1ec38499b177b439648fd5e061234fb
 	height: 60%;
 }
+
 
 button.btn.waves-effect.waves-light {
 	background-color: #4aaaa5;

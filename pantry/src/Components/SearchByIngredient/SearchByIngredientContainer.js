@@ -99,9 +99,14 @@ class SearchByIngredientContainer extends Component {
           </Col>
         </Row>
         <Row>
-          <Col s={12} className='grid-example'> 
+          <Col s={6} className='grid-example'> 
             <Icons  
             handleClick={this.handleClick}
+            />
+          </Col>
+          <Col s={6} className='grid-example'> 
+            <SearchResults  
+            recipes={this.state.recipes}
             />
           </Col>
         </Row>

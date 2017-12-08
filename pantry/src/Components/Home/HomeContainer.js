@@ -5,9 +5,9 @@ import "./Home.css";
 import API from "../../API/index";
 import { Col, Row } from "react-materialize";
 import withAuth from "../HOC/withAuth";
-import PantryChefLogo from ("./PantryChef.JPG")
+// import PantryChefLogo from ("./PantryChef.JPG")
 
-<img src={imageName} />
+{/* <img src={imageName} /> */}
 
 //import './App.css';
 
@@ -38,7 +38,7 @@ class HomeContainer extends Component {
         <Row>
           <Col s={12} className="grid-example">
             <Card />
-            <img src={require("./PantryChef.jpg")} />
+           
           </Col>
         </Row>
         <Row>

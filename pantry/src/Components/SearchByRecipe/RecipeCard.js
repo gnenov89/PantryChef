@@ -1,14 +1,15 @@
 import React,{ Component } from "react";
 import {Card, CardTitle, Row, Col} from "react-materialize"
 import API from "../../API/index";
+import SearchBar from "./SearchBar.js"
 
 
-class recipecard extends Component {
+class RecipeCard extends Component {
 
     constructor() {
         super();
         this.state = {
-            recipe: { images: [{}] }
+            recipe: null
         }
     }
 
@@ -17,25 +18,24 @@ class recipecard extends Component {
         .then(res => this.setState({ recipe: res.data }));
     }
 
+
     render () {
         return (
             <div>
 				<Row>
-                    <Col s={12} m={3} l={3} className="center-align"></Col>
                     <Col s={12} m={6} l={6} className="center-align">
                    
-                    <Card className='small'
+                    { this.state.recipe ? <Card className='small'
                           header={<CardTitle image={this.state.recipe.images[0].hostedLargeUrl}> {this.state.recipe.name} </CardTitle>}
-                          actions={[<a href='#'>This is a Link</a>]}> {this.state.recipe.ingredients} </Card>
+                          actions={[<a href={this.state.recipe.attribution.url}>View on Yummly</a>]}> {this.state.recipe.ingredients} </Card> : null }
                        
                 
                     </Col>
-                    <Col s={12} m={3} l={3} className="center-align"></Col>
-                  
+                                      
                 </Row>  
            </div>
         )
     }
 } 
 
-export default recipecard;
+export default RecipeCard;

@@ -1,28 +1,41 @@
-.App {
-  text-align: center;
+body {
+    background-color:white;
+    
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+a.brand-logo{
+    font-family: 'Lobster', cursive;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+
+div.card-content {
+   font-family: 'Lobster', cursive;
+
 }
 
-.App-title {
-  font-size: 1.5em;
+/* footer.page-footer.example{
+ height: 50px;
+  } */
+
+
+#root {
+    min-height: 70vh;
+}
+ nav{
+    background-color: #FF6e08;
+ }
+
+ footer.page-footer.example {
+    background-color: #FF6e08;
+ }
+
+ .card .card-image img{
+    width: 200px;
+    display: block;
+    margin: 0 auto;  
+   
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+nav .brand-logo{
+    padding-left:10px;
 }

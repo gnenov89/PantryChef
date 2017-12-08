@@ -1,0 +1,32 @@
+/* Home CSS */
+
+/* button {
+	color:white;
+
+}
+*/
+img {
+	height: 60%;
+
+}  
+
+button.btn.waves-effect.waves-light {
+	background-color: #f69b00;
+}
+
+a.btn.waves-effect.waves-light{
+	background-color:#fcdd04;
+}
+
+button.btn.waves-effect.waves-light.center{
+	background-color:#6d8008;
+}
+button.btn.waves-effect.waves-light.btn-flat.modal-action.modal-close{
+	background-color:#314701;
+	color: white;
+}
+button.btn{
+	background-color: #b4d7d4;
+	
+
+}

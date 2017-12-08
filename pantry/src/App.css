@@ -7,12 +7,12 @@ a.brand-logo{
     font-family: 'Lobster', cursive;
 }
 
-img {
+/* img {
     height: 60%;
 
  
  
-}
+} */
 
 div.card-content {
    font-family: 'Lobster', cursive;
@@ -26,4 +26,22 @@ div.card-content {
 
 #root {
     min-height: 70vh;
+}
+ nav{
+    background-color: #FF6e08;
+ }
+
+ footer.page-footer.example {
+    background-color: #FF6e08;
+ }
+
+ .card .card-image img{
+    width: 200px;
+    display: block;
+    margin: 0 auto;  
+   
+}
+
+nav .brand-logo{
+    padding-left:10px;
 }

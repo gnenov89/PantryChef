@@ -1,7 +1,7 @@
 import React,{ Component } from "react";
 import {Button, Row, Col, Icon} from "react-materialize"
 import {Link} from 'react-router-dom';
-
+import "./Home.css"
 
 class buttons extends Component {
     render () {

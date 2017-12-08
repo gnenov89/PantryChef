@@ -1,45 +1,62 @@
-import React,{ Component} from 'react';
-import "./SearchByRecipe.css"
-import SearchBar from "./SearchBar"
-import SearchResults from "./SearchResults"
+import React, { Component } from "react";
+import "./SearchByRecipe.css";
+import SearchBar from "./SearchBar";
 import API from "../../API/index";
-import {Col, Row,} from "react-materialize"
+import { Col, Row } from "react-materialize";
+import SearchResults from "./SearchResults"
 
 class SearchContainer extends Component {
-  // eslint-disable-next-line
-  constructor(...args){
+  constructor(...args) {
     super(...args);
     this.state = {
-      recipes :[],
-      open: true,
-      query: ""
-    }
+      recipes: [],
+      recipeSearch: ""
+    };
+    this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleFormSubmit = this.handleFormSubmit.bind(this);
+
   }
 
-  componentDidMount() {
-    API.searchRecipes(this.state.query)
-      .then(res => this.setState({ recipes: res.data.matches }));
-  }
-    // eslint-disable-next-line
+  handleInputChange = event => {
+    const { name, value } = event.target;
+    this.setState({
+      recipeSearch: value
+    });
+  };
+
+  handleFormSubmit = event => {
+    event.preventDefault();
+    const { name, value } = event.target;
+    this.setState({
+     recipeSearch: value
+    });
+    API.searchRecipes(this.state.recipeSearch)
+      .then(res => this.setState({ recipes: res.data.matches }))
+      .catch(err => console.log(err));
+  };
+
   render() {
-    //console.log(this.state.recipes)
-      // eslint-disable-next-line
-    const{recipes} = this.state;
-      
+    console.log(this.state.data);
+
+    // const{recipes} = this.state;
+
     return (
       <div>
         <Row>
-          <Col s={12} className='grid-example'> 
-            <SearchBar />
+          <Col s={12} className="grid-example">
+            <SearchBar 
+            handleFormSubmit={this.handleFormSubmit}
+            handleInputChange={this.handleInputChange}
+            />
           </Col>
         </Row>
         <Row>
-          <Col s={12} className='grid-example'> 
+          <Col s={12} className="grid-example">
             <SearchResults recipes={this.state.recipes} />
           </Col>
         </Row>
       </div>
-    )
+    );
   }
 }
 

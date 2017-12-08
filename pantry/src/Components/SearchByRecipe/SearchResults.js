@@ -13,11 +13,12 @@ class SearchResults extends Component {
         return (
             <div>
 				<Row>
-                    <Col s={5} className="grid-example"> 
+                    <Col s={12} m={6} l={6} className="center-align">
                      {
                         this.props.recipes.map(function(item, i){
                            return <RecipeCard recipe={item} key={i} />
-                         })
+                        })
+                       
                      }
                     </Col> 
                    

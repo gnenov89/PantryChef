@@ -55,4 +55,5 @@ class Groceries extends Component {
         );
       }
     }
+    
 export default Groceries;

@@ -32,5 +32,16 @@ export default {
         requirePictures: true
     }
     });
+  },
+
+  getRecipe: function(id) {
+    return axios.get(
+        recipeURL + "/" + id,
+    { params: {
+        _app_id,
+        _app_key,
+        requirePictures: true
+    }
+    });
   }
 }

@@ -1,5 +1,6 @@
 import React,{ Component } from "react";
-import {Row, Col, Card, CardTitle} from "react-materialize"
+import {Row, Col} from "react-materialize"
+import RecipeCard from "./RecipeCard.js";
 
 class SearchResults extends Component {
 
@@ -13,14 +14,12 @@ class SearchResults extends Component {
             <div>
 				<Row>
                     <Col s={5} className="grid-example"> 
-                    {
+                     {
                         this.props.recipes.map(function(item, i){
-                             return <Card className='small'
-                             header={<CardTitle image={item.smallImageUrls} key={i}> {item.recipeName} </CardTitle>}
-                             actions={[<a href='#'>This is a Link</a>]}> {item.ingredients} </Card>
-                        })
-                    }
-                   </Col> 
+                           return <RecipeCard recipe={item} key={i} />
+                         })
+                     }
+                    </Col> 
                    
                 </Row>  
            </div>

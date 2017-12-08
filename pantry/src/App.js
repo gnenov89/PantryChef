@@ -17,7 +17,7 @@ import "./App.css"
 import Auth from "./Components/Auth"
 
 const Home = () => <h1>Home</h1>;
-const About = () => <h1>About</h1>;
+
 
 // We give each route either a target `component`, or we can send functions in `render` or `children` 
 // that return valid nodes. `children` always returns the given node whether there is a match or not.
@@ -29,6 +29,11 @@ const App = () => (
       <Route exact path="/" component={HomeContainer} />
       <Route exact path="/ingredientsearch" component={SearchByIngredientContainer} />
       <Route exact path="/SearchByRecipe" component={SearchContainer} />
+<<<<<<< HEAD
+      {//<Route exact path="/SearchByIngredient" component={About} />
+    }
+=======
+>>>>>>> da0a3ee74525e0f2dccfe1b922143a5a09817b3f
     </div>
     </Auth>
   

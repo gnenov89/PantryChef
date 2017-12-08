@@ -23,7 +23,7 @@ class buttons extends Component {
 
             <Row>
             <Col s={12} className="center">
-		    <Button className='center' waves='light'>list<Icon left>list</Icon></Button>
+		    <Button className='center'node='a' href='/GroceryList' waves='light'>list<Icon left>list</Icon></Button>
             </Col>
             
             </Row>

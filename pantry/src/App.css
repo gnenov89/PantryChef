@@ -17,6 +17,9 @@ nav {
 
 footer.page-footer.example {
     background-color: #ff6e08;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .card .card-image img {
@@ -28,3 +31,4 @@ footer.page-footer.example {
 nav.brand-logo {
     padding-left: 10px;
 }
+

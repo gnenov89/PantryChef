@@ -1,5 +1,7 @@
+
 import React, { Component } from "react";
 import { Footer, Icon } from "react-materialize";
+
 
 class footer extends Component {
     render() {

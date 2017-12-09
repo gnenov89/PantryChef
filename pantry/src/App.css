@@ -1,4 +1,6 @@
+
 body {
+
     background-color: white;
     text-align: center;
     display: flex;
@@ -22,10 +24,6 @@ nav {
 footer.page-footer.example {
     background-color: #ff6e08;
     width: 100%;
-}
-
-nav.brand-logo {
-    padding-left: 10px;
 }
 
 main {

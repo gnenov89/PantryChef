@@ -5,8 +5,7 @@ import Icons from "./Icons"
 import API from "../../API/index";
 import {Col, Row,} from "react-materialize"
 import IngredientsAdded from "./IngredientsAdded"
-import SearchResults from "./SearchResults"
-
+import SearchResults from "./SearchResults.js"
 class SearchByIngredientContainer extends Component {
   // eslint-disable-next-line
   constructor(...args){
@@ -26,6 +25,7 @@ class SearchByIngredientContainer extends Component {
     this.handleClick = this.handleClick.bind(this);
     this.handleaddIngredientImg = this.handleaddIngredientImg.bind(this);
 
+
   }
 
   handleInputChange = event => {
@@ -40,6 +40,12 @@ class SearchByIngredientContainer extends Component {
   handleRemoveIngredient = event => {
       // Find the ingredent they clicked
       // remove it from the allowedIngredients list
+  }
+
+  handleIngredientAdded = event => {
+    const imgUrl = event.target.getAttribute("src");
+    console.log(imgUrl);
+
   }
 
   handleFormSubmit = event => {
@@ -81,7 +87,9 @@ class SearchByIngredientContainer extends Component {
 
   handleClick = event => {
     event.preventDefault();    
+
     const alt = event.target.getAttribute("alt");
+
 
     if(this.state.allowedIngredients.length > 2) {
       return;
@@ -90,10 +98,12 @@ class SearchByIngredientContainer extends Component {
         return;
     }
     this.setState({
-      allowedIngredients: this.state.allowedIngredients.concat(alt)
+      allowedIngredients: this.state.allowedIngredients.concat(title)
     }, () => {
+
       API.searchRecipes("", this.state.allowedIngredients.concat(alt))
       .then(res => this.setState({ recipes: res.data.matches }))
+
       .catch(err => console.log(err));
     });
   };
@@ -124,12 +134,14 @@ class SearchByIngredientContainer extends Component {
             />
 
           </Col>
+
           <Col s={2} className='grid-example'>
           <div className="vl"></div>
 
           </Col>
           <Col s={5} className='grid-example'> 
             <SearchResults recipes={this.state.recipes}
+
             />
           </Col>
         </Row>

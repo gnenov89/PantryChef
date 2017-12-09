@@ -5,7 +5,9 @@ import "./Home.css";
 import API from "../../API/index";
 import { Col, Row } from "react-materialize";
 import withAuth from "../HOC/withAuth";
+// import PantryChefLogo from ("./PantryChef.JPG")
 
+{/* <img src={imageName} /> */}
 
 class HomeContainer extends Component {
   // eslint-disable-next-line
@@ -16,6 +18,7 @@ class HomeContainer extends Component {
       open: true
     };
   }
+
 
   render() {
     const { recipes } = this.state;

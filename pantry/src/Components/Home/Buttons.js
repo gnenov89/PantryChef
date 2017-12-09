@@ -1,6 +1,9 @@
-import React, { Component } from "react";
-import { Button, Row, Col, Icon } from "react-materialize";
-import { Link } from "react-router-dom";
+
+import React,{ Component } from "react";
+import {Button, Row, Col, Icon} from "react-materialize"
+import {Link} from 'react-router-dom';
+import "./Home.css"
+
 
 class buttons extends Component {
     render() {
@@ -21,7 +24,6 @@ class buttons extends Component {
                         </Button>
                     </Col>
                 </Row>
-
                 <Row>
                     <Col s={12} className="center">
                         <Button
@@ -36,6 +38,7 @@ class buttons extends Component {
                 </Row>
             </div>
         );
+            
     }
 }
 

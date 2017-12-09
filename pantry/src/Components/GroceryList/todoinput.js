@@ -1,43 +1,36 @@
 import React from "react";
-import "./todoInput.css";
-import { Input, Col, Button } from "react-materialize";
+import './todoInput.css';
+import {Input, Col, Button} from "react-materialize"
+
 
 export default class TodoInput extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { value: this.props.todoText };
-
-    this.handleChange = this.handleChange.bind(this);
-    this.addTodo = this.addTodo.bind(this);
-  }
-
-  handleChange(e) {
-    this.setState({ value: e.target.value });
-  }
-
-  addTodo(todo) {
-    // Ensure a todo was actually entered before submitting
-    if (todo.length > 0) {
-      this.props.addTodo(todo);
-      this.setState({ value: "" });
+    constructor(props) {
+      super(props);
+      this.state = {value: this.props.todoText};
+  
+      this.handleChange = this.handleChange.bind(this);
+      this.addTodo = this.addTodo.bind(this);
+    }
+  
+    handleChange(e) {
+      this.setState({value: e.target.value});
+    }
+  
+    addTodo(todo) {
+      // Ensure a todo was actually entered before submitting
+      if (todo.length > 0) {
+        this.props.addTodo(todo);
+        this.setState({value: ''});
+      }
+    }
+  
+    render() {
+      return (
+        <div>
+          <Input type="text" value={this.state.value} onChange={this.handleChange} />
+          <Button className="btn btn-primary" onClick={() => this.addTodo(this.state.value)}>Submit</Button>
+        </div>
+      );
     }
   }
 
-  render() {
-    return (
-      <div>
-        <Input
-          type="text"
-          value={this.state.value}
-          onChange={this.handleChange}
-        />
-        <Button
-          className="btn btn-primary"
-          onClick={() => this.addTodo(this.state.value)}
-        >
-          Submit
-        </Button>
-      </div>
-    );
-  }
-}

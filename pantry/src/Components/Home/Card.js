@@ -21,6 +21,7 @@ class card extends Component {
                             }
                         />
                         <Col s={12} m={6} l={6} className="left-align" />
+
                     </Col>
                 </Row>
             </div>

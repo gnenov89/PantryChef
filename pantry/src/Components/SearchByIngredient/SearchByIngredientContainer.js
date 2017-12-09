@@ -14,12 +14,17 @@ class SearchByIngredientContainer extends Component {
     this.state = {
         recipes: [],
         ingredientSearch: "",
-        allowedIngredients: []
+        allowedIngredients: [],
+        ingredientImg: {
+          alt: "",
+          src: ""
+        }
       };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleRemoveIngredient = this.handleRemoveIngredient.bind(this);
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
     this.handleClick = this.handleClick.bind(this);
+    this.handleaddIngredientImg = this.handleaddIngredientImg.bind(this);
 
   }
 
@@ -43,6 +48,10 @@ class SearchByIngredientContainer extends Component {
     if(this.state.allowedIngredients.length > 2) {
         return;
     }
+    if(this.state.allowedIngredients.length > 2) {
+      return <button>Search</button>;
+  }
+
     if(this.state.allowedIngredients.indexOf(this.state.ingredientSearch) > -1) {
         return;
     }
@@ -51,18 +60,29 @@ class SearchByIngredientContainer extends Component {
         ingredientSearch: ""
     })
     API.searchRecipes("", this.state.allowedIngredients.concat(this.state.ingredientSearch))
-      .then(res => this.setState({ recipes: res.data }))
+      .then(res => this.setState({ recipes: res.data.matches }))
       .catch(err => console.log(err));
+  }
+
+  handleaddIngredientImg = event => {
+         
+    console.log("hey");  
+     
+    const alt = event.target.getAttribute("alt");
+    const src = event.target.getAttribute("src");
+    console.log(this.state);
+    // this.setState({
+    //   ingredientImg: [{
+    //     alt: this.state.ingredientImg.alt,
+    //     src: this.state.ingredientImg.src
+    //   }]
+    // })
   }
 
   handleClick = event => {
     event.preventDefault();    
-    const alt = event.target.getAttribute("alt")
-    const imgUrl = event.target.getAttribute("src");
-    console.log(imgUrl)
-    console.log(imgUrl);
+    const alt = event.target.getAttribute("alt");
 
-  
     if(this.state.allowedIngredients.length > 2) {
       return;
     }
@@ -73,7 +93,7 @@ class SearchByIngredientContainer extends Component {
       allowedIngredients: this.state.allowedIngredients.concat(alt)
     }, () => {
       API.searchRecipes("", this.state.allowedIngredients.concat(alt))
-      .then(res => this.setState({ recipes: res.data }))
+      .then(res => this.setState({ recipes: res.data.matches }))
       .catch(err => console.log(err));
     });
   };
@@ -93,18 +113,24 @@ class SearchByIngredientContainer extends Component {
           </Col>
           <Col s={6} className='grid-example'> 
             <IngredientsAdded 
-            handleClick={this.handleClick}
+            handleaddIngredientImg={this.handleaddIngredientImg}
             />
           </Col>
         </Row>
         <Row>
-          <Col s={6} className='grid-example'> 
+          <Col s={5} className='grid-example'> 
             <Icons  
             handleClick={this.handleClick}
             />
+
           </Col>
-          <Col s={6} className='grid-example'> 
-            <SearchResults recipes={this.state.recipes} />
+          <Col s={2} className='grid-example'>
+          <div className="vl"></div>
+
+          </Col>
+          <Col s={5} className='grid-example'> 
+            <SearchResults recipes={this.state.recipes}
+            />
           </Col>
         </Row>
       </div>

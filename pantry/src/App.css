@@ -1,29 +1,30 @@
 body {
-    background-color:white;
-    
+    background-color: white;
+    text-align: center;
 }
 
-a.brand-logo{
-    font-family: 'Lobster', cursive;
+a.brand-logo {
+    font-family: "Lobster", cursive;
+    margin-left: 10px;
 }
-
-img {
-    height: 60%;
-
- 
- 
-}
-
-div.card-content {
-   font-family: 'Lobster', cursive;
-
-}
-
-/* footer.page-footer.example{
- height: 50px;
-  } */
-
 
 #root {
     min-height: 70vh;
+}
+nav {
+    background-color: #ff6e08;
+}
+
+footer.page-footer.example {
+    background-color: #ff6e08;
+}
+
+.card .card-image img {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+nav.brand-logo {
+    padding-left: 10px;
 }

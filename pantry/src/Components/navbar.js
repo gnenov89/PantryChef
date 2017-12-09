@@ -8,9 +8,14 @@ class navbar extends Component {
   render() {
     return (
       <div>
-        <Navbar right>
+        <Navbar brand="" right>
           {this.props.currentUser ? (
-            <span onClick={this.props.signOut} style={{ marginRight: 15, cursor: "pointer"}} >Sign Out</span>
+            <span
+              onClick={this.props.signOut}
+              style={{ marginRight: 15, cursor: "pointer" }}
+            >
+              Sign Out
+            </span>
           ) : (
             <Modal
               header="Sign In"

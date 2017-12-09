@@ -10,9 +10,10 @@ class IngredientsAdded extends Component {
                         <Col 
                         s={1} 
                         className='grid-example'>
-                        <img 
-                        src={this.props.alt} 
-                        />
+                        {/* <img 
+                        src={this.props.ingredientImg} 
+                        alt={this.props.ingredientImg}
+                        />  */}
                         </Col>
                         
                         <Col s={1} className='grid-example'></Col>

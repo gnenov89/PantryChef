@@ -19,6 +19,10 @@ img{
 
 .recipeCards {
 	float: left;
+	max-width: 300px;
+	max-height: 400px;
+	padding-right: 10px;
+	margin: 10px;
 }
 
 .recipeDiv {

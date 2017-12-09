@@ -21,7 +21,7 @@ class RecipeCard extends Component {
         return (
             <div className="recipeCards">
                 <Row>
-                    <Col s={12} m={6} l={6} className="center-align">
+                     <Col  className="center-align">
                         {this.state.recipe ? (
                             <Card
                                 className="medium"

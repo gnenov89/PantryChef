@@ -1,26 +1,23 @@
-
-import React,{ Component } from "react";
-import {Footer, Icon} from "react-materialize"
-
-
-
-
+import React, { Component } from "react";
+import { Footer, Icon } from "react-materialize";
 
 class footer extends Component {
     render() {
         return (
-            <div>
-
-
-                <Footer copyrights="Copyright &copy; 2017 Pantry Chef" className="example">
-                    <a className="grey-text text-lighten-4 right"
-                        href="https://github.com/gnenov89/PantryChef/tree/master/pantry"
+            <Footer
+                copyrights="&copy; 2017 Pantry Chef"
+                moreLinks={
+                    <a
+                        className="grey-text text-lighten-4 right"
+                        href="#https://github.com/gnenov89/PantryChef/tree/master/pantry"
                     >
-                        
+                        GitHub
                     </a>
-                </Footer>
-
-            </div>
+                }
+                className="example"
+            >
+                
+            </Footer>
         );
     }
 }

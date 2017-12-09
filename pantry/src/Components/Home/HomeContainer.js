@@ -9,8 +9,6 @@ import withAuth from "../HOC/withAuth";
 
 {/* <img src={imageName} /> */}
 
-//import './App.css';
-
 class HomeContainer extends Component {
   // eslint-disable-next-line
   constructor(...args) {
@@ -21,16 +19,8 @@ class HomeContainer extends Component {
     };
   }
 
-  componentDidMount() {
-    API.searchRecipes("bread pudding").then(res =>
-      this.setState({ recipes: res.data.matches })
-    );
-  }
-  // eslint-disable-next-line
+
   render() {
-    console.log(this.props);
-    console.log(this.state.recipes);
-    // eslint-disable-next-line
     const { recipes } = this.state;
 
     return (
@@ -38,7 +28,6 @@ class HomeContainer extends Component {
         <Row>
           <Col s={12} className="grid-example">
             <Card />
-           
           </Col>
         </Row>
         <Row>

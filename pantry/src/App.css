@@ -1,48 +1,31 @@
 
 body {
-    background-color:white;
-    text-align: center
+
+    background-color: white;
+    text-align: center;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
 }
 
-a.brand-logo{
-    font-family: 'Lobster', cursive;
-    margin-left:10px;
+a.brand-logo {
+    font-family: "Lobster", cursive;
+    margin-left: 10px;
 }
-
-
-/* div.card-content {
-   font-family: 'Lobster', cursive;
-
-} */
-
-/* footer.page-footer.example{
- height: 50px;
-  } */ */
-
 
 #root {
     min-height: 70vh;
 }
- nav{
-    background-color: #FF6e08;
- }
 
- footer.page-footer.example {
-    background-color: #FF6e08;
- }
-
- .card .card-image img{
-    width: 200px;
-    display: block;
-    margin: 0 auto;  
-   
+nav {
+    background-color: #ff6e08;
 }
 
-nav.brand-logo{
-    padding-left:10px;
+footer.page-footer.example {
+    background-color: #ff6e08;
+    width: 100%;
 }
 
-/* img. {
-	height: 60%;
-
-}    */
+main {
+    flex: 1 0 auto;
+}

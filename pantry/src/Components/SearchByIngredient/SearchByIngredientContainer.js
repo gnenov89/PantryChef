@@ -6,6 +6,7 @@ import API from "../../API/index";
 import {Col, Row,} from "react-materialize"
 import IngredientsAdded from "./IngredientsAdded"
 import SearchResults from "./SearchResults.js"
+
 class SearchByIngredientContainer extends Component {
   // eslint-disable-next-line
   constructor(...args){
@@ -24,7 +25,6 @@ class SearchByIngredientContainer extends Component {
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
     this.handleClick = this.handleClick.bind(this);
     this.handleaddIngredientImg = this.handleaddIngredientImg.bind(this);
-
 
   }
 

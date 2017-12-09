@@ -4,13 +4,9 @@ button {
 	color: white;
 }
 
-
 img.activator {
-
- 
-	height: 60%;
+	height: 20%;
 }
-
 
 button.btn.waves-effect.waves-light {
 	background-color: #4aaaa5;
@@ -30,7 +26,8 @@ button.btn.waves-effect.waves-light.btn-flat.modal-action.modal-close {
 button.btn {
 	background-color: #b4d7d4;
 }
-.card .card-image img {
+
+.card .card-image {
 	width: 200px;
 	display: block;
 	margin: 0 auto;

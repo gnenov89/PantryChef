@@ -9,7 +9,7 @@ class SearchResults extends Component {
 				<Row>
                 {
                     this.props.recipes.map(function(item, i){
-                         return <ul key={i}>{item.recipeName} <img src={item.smallImageUrls}/> </ul>
+                         return <ul key={i}>{item.recipeName} <li>Ingredients: {item.smallImageUrls}</li></ul>
                     })
                 }
                 </Row>  

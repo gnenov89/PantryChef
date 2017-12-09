@@ -29,6 +29,7 @@ const App = () => (
       <Route exact path="/" component={HomeContainer} />
       <Route exact path="/ingredientsearch" component={SearchByIngredientContainer} />
       <Route exact path="/SearchByRecipe" component={SearchContainer} />
+
     </div>
     </Auth>
   

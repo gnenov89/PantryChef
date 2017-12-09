@@ -24,7 +24,7 @@ const Home = () => <h1>Home</h1>;
 const App = () => (
   <Router>
     <Auth>
-    <div>
+    <div className="main">
       <Navbar />
       <Route exact path="/" component={HomeContainer} />
       <Route exact path="/ingredientsearch" component={IconContainer} />

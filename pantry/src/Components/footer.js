@@ -4,6 +4,7 @@ import { Footer, Icon } from "react-materialize";
 class footer extends Component {
     render() {
         return (
+            <div>
             <Footer
                 copyrights="&copy; 2017 Pantry Chef"
                 moreLinks={
@@ -18,6 +19,7 @@ class footer extends Component {
             >
                 
             </Footer>
+            </div>
         );
     }
 }

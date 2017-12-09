@@ -1,6 +1,9 @@
 body {
     background-color: white;
     text-align: center;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
 }
 
 a.brand-logo {
@@ -11,24 +14,20 @@ a.brand-logo {
 #root {
     min-height: 70vh;
 }
+
 nav {
     background-color: #ff6e08;
 }
 
 footer.page-footer.example {
     background-color: #ff6e08;
-    position: absolute;
-    bottom: 0;
     width: 100%;
-}
-
-.card .card-image img {
-    width: 200px;
-    display: block;
-    margin: 0 auto;
 }
 
 nav.brand-logo {
     padding-left: 10px;
 }
 
+main {
+    flex: 1 0 auto;
+}

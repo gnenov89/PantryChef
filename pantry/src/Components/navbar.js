@@ -8,7 +8,7 @@ class navbar extends Component {
   render() {
     return (
       <div>
-        <Navbar brand="" right>
+        <Navbar brand="Pantry Chef" left>
           {this.props.currentUser ? (
             <span
               onClick={this.props.signOut}

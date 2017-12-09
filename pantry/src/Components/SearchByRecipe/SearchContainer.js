@@ -41,7 +41,7 @@ class SearchContainer extends Component {
     // const{recipes} = this.state;
 
     return (
-      <div>
+      <div className="recipeDiv">
         <Row>
           <Col s={12} className="grid-example">
             <SearchBar 

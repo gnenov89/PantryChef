@@ -1,21 +1,23 @@
+
 body {
     background-color:white;
-    
+    text-align: center
 }
 
 a.brand-logo{
     font-family: 'Lobster', cursive;
+    margin-left:10px;
 }
 
 
-div.card-content {
+/* div.card-content {
    font-family: 'Lobster', cursive;
 
-}
+} */
 
 /* footer.page-footer.example{
  height: 50px;
-  } */
+  } */ */
 
 
 #root {
@@ -36,6 +38,11 @@ div.card-content {
    
 }
 
-nav .brand-logo{
+nav.brand-logo{
     padding-left:10px;
 }
+
+/* img. {
+	height: 60%;
+
+}    */

@@ -1,6 +1,7 @@
 import React,{ Component } from "react";
 import {Input, Row, Col} from "react-materialize"
 
+
 class SearchResults extends Component {
 
     render () {

@@ -98,7 +98,7 @@ class SearchByIngredientContainer extends Component {
         return;
     }
     this.setState({
-      allowedIngredients: this.state.allowedIngredients.concat(title)
+      allowedIngredients: this.state.allowedIngredients.concat(alt)
     }, () => {
 
       API.searchRecipes("", this.state.allowedIngredients.concat(alt))

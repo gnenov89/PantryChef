@@ -23,6 +23,7 @@ const Home = () => <h1>Home</h1>;
 // We give each route either a target `component`, or we can send functions in `render` or `children` 
 // that return valid nodes. `children` always returns the given node whether there is a match or not.
 const App = () => (
+  
   <Router>
     <Auth>
     <div>

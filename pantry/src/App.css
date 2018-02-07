@@ -10,16 +10,6 @@ a.brand-logo{
 }
 
 
-/* div.card-content {
-   font-family: 'Lobster', cursive;
-
-} */
-
-/* footer.page-footer.example{
- height: 50px;
-  } */ */
-
-
 #root {
     min-height: 70vh;
 }
@@ -42,7 +32,3 @@ nav.brand-logo{
     padding-left:10px;
 }
 
-/* img. {
-	height: 60%;
-
-}    */
